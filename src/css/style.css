@@ -203,8 +203,7 @@ a{
     .header li a {
         display: block;
         list-style: none;
-        margin: 20px;
-        width: 280px;
+        width: 250px;
         height: 50px;
         color: #000;
         border-radius: 10px;
@@ -214,8 +213,6 @@ a{
     }
 
     .header li{
-        height: 100%;
-
         border-radius: 30%;
         justify-items: center;
         margin: 10px;
