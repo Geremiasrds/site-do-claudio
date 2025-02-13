@@ -1,0 +1,314 @@
+
+header {
+    margin-top: 0;
+    background: url(../../logo-big.png) no-repeat;
+    background-position: 50%;
+    background-size: 100px;
+    backface-visibility: hidden;
+    padding: 0 0 0 30px ;
+
+}
+
+.cards {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+.whatsapp-btn{
+    position: fixed;
+    bottom: 10%;
+    animation-direction: alternate;
+    
+}
+
+
+#input, button {
+    position: absolute;
+    display: block;
+    right: 150px;
+    padding: 0 80px 0;
+    top: 10%;
+
+}
+
+button {
+    display: block;
+    margin: 0 0px;
+    padding: 0 10px;
+}
+
+
+
+.header-menu {
+    /* background-color: #0587eb; */
+    display: flex;
+    width: 0;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.infor-menu{
+    display: none;
+}
+.infor-menu-dk {
+    bottom: 0;
+    font-size: 11px;
+    text-align: left;
+    padding: 0;
+    padding: 0;
+    color: #ddd2d2;
+    background-color: #0f0e0ee3;
+   
+}
+
+.infor-menu-dk img{
+    width: 100%;
+    height: 80px;
+}
+h2{
+    color: green;
+    font-size: 29px;
+
+}
+strong{
+    color: #000;
+}
+
+.header li a {
+    border-radius: 10px;
+    display: block;
+    height: 80px;
+    width: 100px;
+    padding: 0 10px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: rgba(15, 205, 239, 0.483);
+   
+}
+
+.header li{
+    font-size: 20px;
+    padding: 0 10px ;
+  
+
+}
+
+.inicial {
+    top: 0;
+    width: 100vh;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.inicial h1 {
+    margin: 0
+}
+
+.inicial p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.header .menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+
+}
+
+.header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+
+}
+
+.header .hamburguer:before {
+    top: -10px;
+
+}
+
+.header .hamburguer:after {
+    bottom: -10px;
+
+}
+
+.header input {
+    display: none;
+
+}
+
+.header input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.header input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.header .inicial:hover a{
+    color: rgb(21, 0, 255);
+    font-family: Cantar;
+}
+
+/* .header h1, p{
+    background-color: #000;
+} */
+.header li:hover a{
+    color: rgb(250, 248, 247);
+    background-color: rgb(8, 23, 237);
+    transition: 0.7s;
+    font-family: Girassol;
+
+}
+
+a{
+    list-style: none;
+    border-bottom: none;
+    text-decoration: none;
+    outline: yellow;
+
+} 
+@media (max-width: 700px) {
+
+
+    .header li a {
+        display: block;
+        list-style: none;
+        margin: 20px;
+        width: 280px;
+        height: 50px;
+        color: #000;
+        border-radius: 10px;
+        border: 1px solid rgb(248, 244, 244);
+        text-align: center;
+        background-color: rgba(12, 148, 233, 0.308);
+    }
+
+    .header li{
+        height: 100%;
+
+        border-radius: 30%;
+        justify-items: center;
+        margin: 10px;
+    } 
+
+    .cards {
+        margin-top: 130px;
+    }
+
+
+    .inicial {
+        position: absolute;
+        top: 0;
+        width: 100vh;
+        text-align: left;
+    }
+
+    .header {
+        background-color: #f7f7f7;
+        position: fixed;
+        
+        height: 130px;
+        top: 0;
+        left: 0;
+        width: 100vh;
+
+    }
+
+    .header input:checked~ul {
+        display: block;
+        background: url(../../refrigera.jpg) no-repeat;
+        position: fixed;
+        width: 380px;
+        top: 18%;
+    }
+
+    .infor-menu {
+        font-size: 11px;
+        text-align: left;
+        display: block;
+        padding: 0;
+        padding: 0;
+        color: #f7f7f7;
+        background-color: #f7f7f70f;
+    }
+
+    .inicial {
+        left: 16%;
+        width: 100%;
+    }
+
+    .header .menu {
+        display: block;
+    }
+
+    .header nav ul {
+        display: none;
+        list-style: none;
+    }
+
+    .header nav ul li {
+        font-size: 30px;
+        border-radius: 10px;
+        justify-content: end;
+        align-items: end;
+        text-align: end;
+        justify-items: left;
+    }
+    .area-central{
+        text-align: center;
+       padding-top: 130px;
+    }
+
+    #input,
+    button {
+        position: relative;
+        display: none;
+        padding: 0;
+        top: 3%;
+        left: 0;
+    }
+
+    button {
+        position: absolute;
+
+    }
+
+    .infor-menu {
+        font-size: 11px;
+        text-align: left;
+        padding: 0;
+        padding: 0;
+        color: #f7f2f2;
+        background-color: #1010107b;
+    }
+}

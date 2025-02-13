@@ -1,0 +1,10 @@
+*{
+    body{
+        background-color: beige;
+    }
+    a{
+        text-decoration: none;
+        border-bottom: none;
+        outline: none
+    }
+}
