@@ -1,11 +1,10 @@
-
 header {
     margin-top: 0;
     background: url(../../logo-big.png) no-repeat;
     background-position: 60%;
     background-size: 100px;
     backface-visibility: hidden;
-    padding: 0 0 0 30px ;
+    padding: 0 0 0 30px;
 
 }
 
@@ -15,15 +14,16 @@ header {
 }
 
 
-.whatsapp-btn{
+.whatsapp-btn {
     position: fixed;
     bottom: 10%;
     animation-direction: alternate;
-    
+
 }
 
 
-#input, button {
+#input,
+button {
     position: absolute;
     display: block;
     right: 150px;
@@ -51,9 +51,10 @@ button {
     list-style: none;
 }
 
-.infor-menu{
+.infor-menu {
     display: none;
 }
+
 .infor-menu-dk {
     bottom: 0;
     font-size: 11px;
@@ -62,19 +63,21 @@ button {
     padding: 0;
     color: #ddd2d2;
     background-color: #0f0e0ee3;
-   
+
 }
 
-.infor-menu-dk img{
+.infor-menu-dk img {
     width: 100%;
     height: 80px;
 }
-h2{
-    color: green;
+
+h2 {
+    color: rgb(3, 119, 182);
     font-size: 29px;
 
 }
-strong{
+
+strong {
     color: #000;
 }
 
@@ -88,13 +91,13 @@ strong{
     margin-bottom: 10px;
     height: 40px;
     background-color: rgba(15, 205, 239, 0.483);
-   
+
 }
 
-.header li{
+.header li {
     font-size: 20px;
-    padding: 0 10px ;
-  
+    padding: 0 10px;
+
 
 }
 
@@ -174,7 +177,7 @@ strong{
     bottom: 0;
 }
 
-.header .inicial:hover a{
+.header .inicial:hover a {
     color: rgb(21, 0, 255);
     font-family: Cantar;
 }
@@ -182,7 +185,7 @@ strong{
 /* .header h1, p{
     background-color: #000;
 } */
-.header li:hover a{
+.header li:hover a {
     color: rgb(250, 248, 247);
     background-color: rgb(8, 23, 237);
     transition: 0.7s;
@@ -190,13 +193,14 @@ strong{
 
 }
 
-a{
+a {
     list-style: none;
     border-bottom: none;
     text-decoration: none;
     outline: yellow;
 
-} 
+}
+
 @media (max-width: 700px) {
 
 
@@ -213,11 +217,11 @@ a{
         background-color: rgba(12, 148, 233, 0.308);
     }
 
-    .header li{
+    .header li {
         border-radius: 30%;
         justify-items: center;
         margin: 10px;
-    } 
+    }
 
     .cards {
         margin-top: 130px;
@@ -234,13 +238,16 @@ a{
     .header {
         background-color: #f7f7f7;
         position: fixed;
-        
+
         height: 130px;
         top: 0;
         left: 0;
         width: 100vh;
 
     }
+    /* .area-central img{
+        min-width: 100px;
+    } */
 
     .header input:checked~ul {
         display: block;
@@ -262,10 +269,6 @@ a{
         background-color: #f7f7f70f;
     }
 
-    .inicial {
-        left: 16%;
-        width: 100%;
-    }
 
     .header .menu {
         display: block;
@@ -284,9 +287,10 @@ a{
         text-align: end;
         justify-items: left;
     }
-    .area-central{
+
+    .area-central {
         text-align: center;
-       padding-top: 130px;
+        padding-top: 130px;
     }
 
     #input,
@@ -312,19 +316,27 @@ a{
         background-color: #1010107b;
     }
 
-    .header h1, p{
+    .header .inicial {
         color: #0077ff;
         width: 90px;
-        border-right: 1px solid #0077ff;
-        }
+        border-left: 2px solid #0077ff;
+        left: 30%;
+        /* margin-left: 10px; */
+    }
 
-        header {
-            margin-top: 0;
-            background: url(../../logo-big.png) no-repeat;
-            background-position: 270px 0px;
-            background-size: 90px;
-            backface-visibility: hidden;
-            padding: 0 0 0 30px ;
-        
-        }
+    .header,
+    .inicial {
+        background-position: 150px 0px;
+        background-size: 90px;
+        padding: 0 0 0 30px;
+
+    }
+
+    header {
+        margin-top: 0;
+        background: url(../../logo-big.png) no-repeat;
+        backface-visibility: hidden;
+
+
+    }
 }

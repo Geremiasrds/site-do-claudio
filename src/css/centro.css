@@ -1,16 +1,4 @@
 .area-central{
     text-align: center;
-   
-}
-.primeira-area{
-    border-bottom: 1px double rgba(82, 193, 9, 0.419);
-    margin: 5px;
-}
-.segunda-area{
-    border-bottom: 1px double rgba(82, 193, 9, 0.419);
-    margin: 5px;
-}
-.terceira-area{
-    border-bottom: 1px double rgba(82, 193, 9, 0.419);
-    margin: 5px;
+   background-color: rgb(250, 249, 248);
 }
