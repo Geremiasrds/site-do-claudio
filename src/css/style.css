@@ -1,11 +1,11 @@
-header {
-    margin-top: 0;
-    background: url(../../logo-big.png) no-repeat;
-    background-position: 60%;
-    background-size: 100px;
-    backface-visibility: hidden;
-    padding: 0 0 0 30px;
+@font-face{
+    font-family: primeira;
+    src: url(fontes/Kanit/Kanit-Medium.ttf) format('truetype')
+    
+}
 
+strong, h2{
+    font-family: primeira;
 }
 
 .cards {
@@ -17,8 +17,6 @@ header {
 .whatsapp-btn {
     position: fixed;
     bottom: 10%;
-    animation-direction: alternate;
-
 }
 
 
@@ -102,27 +100,34 @@ strong {
 }
 
 .inicial {
-    top: 0;
     width: 100vh;
-    margin-left: 20px;
     text-align: left;
+    color: #0077ff;
 }
 
-.inicial h1 {
+.inicial h1,
+p {
     margin: 0
 }
 
+
 .inicial p {
-    margin: 0;
     font-size: 13px;
 }
 
 .header .menu {
     display: none;
     width: 60px;
-    height: 60px;
-
+    height: 90px;
+    padding-left: 19px;
 }
+
+.menu:hover,
+.menu:focus {
+    transition: 0.2s ease-in-out;
+    transform: matrix3d(90deg);
+}
+
 
 .header .hamburguer {
     background-color: #000;
@@ -131,7 +136,7 @@ strong {
     width: 30px;
     height: 3px;
     top: 50%;
-    left: 15px;
+    left: px;
     transition: 0.5s ease-in-out;
 
 }
@@ -179,30 +184,28 @@ strong {
 
 .header .inicial:hover a {
     color: rgb(21, 0, 255);
-    font-family: Cantar;
 }
 
 /* .header h1, p{
     background-color: #000;
 } */
 .header li:hover a {
-    color: rgb(250, 248, 247);
+    color: #ddd2d2;
     background-color: rgb(8, 23, 237);
-    transition: 0.7s;
-    font-family: Girassol;
+    transition: 0.2s;
+    font-family: primeira;
 
 }
 
-a {
+a{
     list-style: none;
-    border-bottom: none;
-    text-decoration: none;
-    outline: yellow;
+    
+    all: unset;
 
-}
+} 
 
-@media (max-width: 700px) {
 
+@media (max-width: 600px) {
 
     .header li a {
         display: block;
@@ -216,6 +219,7 @@ a {
         text-align: center;
         background-color: rgba(12, 148, 233, 0.308);
     }
+
 
     .header li {
         border-radius: 30%;
@@ -236,28 +240,26 @@ a {
     }
 
     .header {
-        background-color: #f7f7f7;
+        background-color: hsl(0, 0%, 100%);
         position: fixed;
-
-        height: 130px;
         top: 0;
-        left: 0;
+        height: 138px;
         width: 100vh;
+        border-bottom: 2px double black;
 
     }
-    /* .area-central img{
-        min-width: 100px;
-    } */
 
     .header input:checked~ul {
         display: block;
+        text-align: center;
         background: url(../../refrigera.jpg) no-repeat;
         background-size: 380px;
-        position: fixed;
-        left: 0;
-        height: 100%;
-        top: 15%;
+        margin-top: 50px;
+        font-family: primeira;
+        height: 500px;
+        width: 100%;
     }
+
 
     .infor-menu {
         font-size: 11px;
@@ -290,7 +292,7 @@ a {
 
     .area-central {
         text-align: center;
-        padding-top: 130px;
+        padding-top: 90px;
     }
 
     #input,
@@ -317,25 +319,30 @@ a {
     }
 
     .header .inicial {
-        color: #0077ff;
         width: 90px;
+        left: 10%;
+        color: #0077ff;
+    }
+    figure {
+        display: flex;
+        width: 300px;
+        height: 0;
+        font-size: 25px;
+        align-items: center;
+        padding: 30px 0 0 0;
+        font-family: primeira;
+        
+    }
+
+    figure img {
+        height: 140px;
+        padding: 20px 0 30px 0;
+        padding-right: 8px;
+    }
+
+figcaption {
         border-left: 2px solid #0077ff;
-        left: 30%;
-        /* margin-left: 10px; */
-    }
-
-    .header,
-    .inicial {
-        background-position: 150px 0px;
-        background-size: 90px;
-        padding: 0 0 0 30px;
-
-    }
-
-    header {
-        margin-top: 0;
-        background: url(../../logo-big.png) no-repeat;
-        backface-visibility: hidden;
+        padding-left: 9px;
 
 
     }
