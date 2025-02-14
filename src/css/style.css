@@ -1,10 +1,10 @@
-@font-face{
+@font-face {
     font-family: primeira;
     src: url(fontes/Kanit/Kanit-Medium.ttf) format('truetype')
-    
 }
 
-strong, h2{
+strong,
+h2 {
     font-family: primeira;
 }
 
@@ -22,14 +22,15 @@ figure {
     justify-items: center;
     align-items: center;
     font-family: primeira;
-    
+
 }
 
-.area-central{
+.area-central {
     text-align: center;
-   background-color: rgba(249, 251, 252, 0.406);
-   margin-top: 180px;
+    background-color: rgba(249, 251, 252, 0.406);
+    margin-top: 180px;
 }
+
 .header {
     display: flex;
     position: fixed;
@@ -45,11 +46,11 @@ figure img {
 
 }
 
-.header  ul{
+.header ul {
     flex-wrap: wrap;
     display: flex;
     list-style: none;
-    padding: 0 0  0 288px ;
+    padding: 0 0 0 288px;
 }
 
 figcaption {
@@ -68,20 +69,28 @@ figcaption {
     font-family: primeira;
 
     animation: movimento 5s infinite;
-  }
-  
-  @keyframes movimento {
+}
+
+@keyframes movimento {
     0% {
-      transform: translatey();
+        transform: translatey();
     }
+
     50% {
         background-color: #14f3574f;
-      transform: translatey(10px);
+        animation: 0.1s ease-in-out;
+        border: 2px double rgb(6, 238, 196);
+        border-radius: 20px;
+        transform: translatey(10px);
+        font-size: 18px;
     }
+
     100% {
         transform: translatex(20px);
+        transition: 0.1s ease-in-out;
+
     }
-  }
+}
 
 
 
@@ -260,20 +269,20 @@ p {
 
 }
 
-a{
+a {
     list-style: none;
-    
+
     all: unset;
 
-} 
+}
 
-.infor-menu-dk{
+.infor-menu-dk {
     display: block;
     height: 200px;
     font-size: 17px;
 }
 
-.infor-menu-dk p{
+.infor-menu-dk p {
     border-bottom: 1px saddlebrown solid;
     margin-left: 20px;
 }
@@ -398,6 +407,7 @@ a{
         left: 10%;
         color: #0077ff;
     }
+
     figure {
         display: flex;
         width: 300px;
@@ -407,7 +417,7 @@ a{
         padding: 30px 0 0 0;
         margin: 30px 0 0 0;
         font-family: primeira;
-        
+
     }
 
     figure img {
@@ -416,18 +426,18 @@ a{
         padding-right: 8px;
     }
 
-figcaption {
-    display: block;
+    figcaption {
+        display: block;
         border-left: 2px solid #0077ff;
         padding-left: 9px;
 
 
     }
 
-    .area-central{
+    .area-central {
         text-align: center;
-       background-color: rgba(249, 251, 252, 0.406);
-       margin-top: 50px;
+        background-color: rgba(249, 251, 252, 0.406);
+        margin-top: 50px;
     }
 
     .whatsapp-btn {
@@ -437,22 +447,29 @@ figcaption {
         right: 3%;
         text-align: center;
         font-family: primeira;
-    
+font-size: 10px;
         animation: movimento 5s infinite;
-      }
-      
-      @keyframes movimento {
+    }
+
+    @keyframes movimento {
         0% {
-          transform: translatey();
+            transform: translatey();
         }
+
         50% {
             background-color: #14f3574f;
-          transform: translatey(10px);
+            animation: 0.1s ease-in-out;
+            border: 2px double rgb(6, 238, 196);
+            border-radius: 20px;
+            transform: translatey(10px);
+            font-size: 18px;
         }
+
         100% {
             transform: matrix3d(10px);
+
         }
-      }
-    
-    
+    }
+
+
 }
