@@ -28,7 +28,6 @@ figure {
 .area-central {
     text-align: center;
     background-color: rgba(249, 251, 252, 0.406);
-    margin-top: 180px;
 }
 
 .header {
@@ -376,7 +375,6 @@ a {
 
     .area-central {
         text-align: center;
-        padding-top: 90px;
     }
 
     #input,
@@ -437,7 +435,8 @@ a {
     .area-central {
         text-align: center;
         background-color: rgba(249, 251, 252, 0.406);
-        margin-top: 50px;
+        margin-top: 0px;
+        padding-top: 0;
     }
 
     .whatsapp-btn {
