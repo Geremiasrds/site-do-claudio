@@ -46,8 +46,9 @@ figure img {
 }
 
 .header ul {
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: wrap;
+    
     list-style: none;
     padding: 0 0 0 288px;
 }
@@ -62,52 +63,22 @@ figcaption {
 
 .whatsapp-btn {
     position: fixed;
-    top: 11%;
+    top: 10%;
     right: 10%;
     text-align: center;
     font-family: primeira;
 
-    animation: movimento 5s infinite;
+    animation: movimento 2s infinite;
 }
 
 @keyframes movimento {
-    0% {
-        transform: translatey();
-    }
-
     50% {
-        background-color: #14f3574f;
-        animation: 0.1s ease-in-out;
-        border: 2px double rgb(6, 238, 196);
         border-radius: 20px;
         transform: translatey(10px);
         font-size: 18px;
     }
-
-    100% {
-        transform: translatex(20px);
-        transition: 0.1s ease-in-out;
-
-    }
 }
 
-
-
-#input,
-button {
-    position: absolute;
-    display: block;
-    right: 150px;
-    padding: 0 80px 0;
-    top: 10%;
-
-}
-
-button {
-    display: block;
-    margin: 0 0px;
-    padding: 0 10px;
-}
 
 
 
@@ -376,19 +347,14 @@ a {
         text-align: center;
     }
 
-    #input,
+    /* #input,
     button {
         position: relative;
         display: none;
         padding: 0;
         top: 3%;
         left: 0;
-    }
-
-    button {
-        position: absolute;
-
-    }
+    } */
 
     .infor-menu { 
         font-size: 16px;
@@ -449,27 +415,15 @@ a {
         right: 3%;
         text-align: center;
         font-family: primeira;
-font-size: 10px;
-        animation: movimento 5s infinite;
+font-size: 8px;
+        animation: movimento 2s infinite;
     }
 
     @keyframes movimento {
-        0% {
-            transform: translatey();
-        }
-
         50% {
-            background-color: #14f3574f;
-            animation: 0.1s ease-in-out;
-            border: 2px double rgb(6, 238, 196);
             border-radius: 20px;
             transform: translatey(10px);
             font-size: 18px;
-        }
-
-        100% {
-            transform: matrix3d(10px);
-
         }
     }
 
