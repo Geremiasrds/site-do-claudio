@@ -33,21 +33,26 @@
 
 // inputs.addEventListener('change', (e) => {
 //   const valorDigitado = e.target.value;
+
+
+
 //  console.log(valorDigitado)
+
+
 // });
 
 
 
 
-const input = document.getElementById('meu-input');
-const botao = document.getElementById('enviar');
+// const input = document.getElementById('meu-input');
+// const botao = document.getElementById('enviar');
 
-botao.addEventListener('click', (e) => {
-  const valorDigitado = input.value;
-  const numero = '+5591984572107';
-  const link = `https://wa.me/${5591984572107}?text=${encodeURIComponent(valorDigitado)}`;
-  window.open(link, '_blank');
-});
+// botao.addEventListener('click', (e) => {
+//   const valorDigitado = input.value;
+//   const numero = '+5591984572107';
+// //   const link = `https://wa.me/${559199069633}?text=${encodeURIComponent(valorDigitado)}`;
+// //   window.open(link, '_blank');
+// });
 
 
 
@@ -59,13 +64,12 @@ botao.addEventListener('click', (e) => {
 
 // function enviar() {
 //     const inputs = document.getElementById('meu-input');
-
 //     inputs.addEventListener('change', (e) => {
-//         const valorDigitado = e.target.value;
+//         const valorDigitado = e.target.value
+//         console.log(valorDigitado)
 
-
-//         const url = `https://wa.me/${91984572107}?text=${encodeURIComponent(mensagem)}`;
-//         window.open(url, '_blank');
+//         //     // const url = `https://wa.me/${91984572107}?text=${encodeURIComponent(mensagem)}`;
+//         //     // window.open(url, '_blank');
 //     });
 
 // }
@@ -81,16 +85,19 @@ botao.addEventListener('click', (e) => {
 
 
 
-// const input = document.getElementById('inputs');
-// const botao = document.getElementById('enviar');
+const botao = document.getElementById('enviar');
 
-// botao.addEventListener('click', (e) => {
-//   const mensagem = input.value;
-//   const numero = '+5591984572107'; // número de telefone do destinatário
+botao.addEventListener('click', (e) => {
+    const input = document.getElementById('meu-input')
+    const inputNuber = document.getElementById ('meu-input-nuber')
+    const mensagem = input.value
+    const mensagem2 = inputNuber.value
+ 
+    const numero = '+559199069633'; // número de telefone do destinatário
 
-//   const url = `https://wa.me/${91984572107}?text=${encodeURIComponent(mensagem)}`;
-//   window.open(url, '_blank');
-// });
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem, mensagem2)}`;
+      window.open(url, '_blank');
+});
 
 
 

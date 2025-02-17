@@ -427,5 +427,23 @@ font-size: 8px;
         }
     }
 
+    .formulario {
+        font-family: primeira;
+        text-align: center;
+        font-size: 12px;
+        display: block;
+        align-items: center;
+        margin: 10px 0 10px;
+        border-radius: 10px;
+        background-color: rgb(169, 184, 190);
+    
+    
+    }
+
+    .primeira-area img{
+        width: 100%;
+
+    }
+
 
 }
