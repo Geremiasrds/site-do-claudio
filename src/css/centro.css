@@ -14,13 +14,8 @@
 
 
 .formulario button {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-    margin-left: 100px;
-    width: 100px;
+    margin-left: 10px;
+
     height: 25px;
     border-radius: 10px;
     background-color: rgba(120, 231, 120, 0.221);
@@ -39,15 +34,48 @@
 }
 
 .formulario {
-    height: 135px;
     font-size: 12px;
-    display: block;
     margin: 10px 0 10px;
     border-radius: 10px;
+    justify-items: center;
     border: 1px ridge rgba(0, 0, 0, 0.063);
     background-color: rgb(169, 184, 190);
 
 
+}
+
+.simulação button{
+    background-color: rgba(150, 162, 165, 0.909);
+    font-family: terceira;
+    margin: 0 10px;
+    
+}
+.simulação h2{
+color: rgb(30, 35, 40);
+    
+}
+.simulação{
+    background-color: rgba(150, 150, 165, 0.14);
+    height: 100%;
+    
+}
+
+/* .mostrar-clicar{
+    display: none;
+} */
+.instalacao{
+    display: none;
+    background-color: rgba(127, 255, 212, 0.212);
+}
+
+.limpeza{
+    background-color: rgba(118, 156, 217, 0.242);
+    display: none;
+}
+
+.visita{
+    background-color: rgba(61, 74, 127, 0.247);
+    display: none;
 }
 
 
