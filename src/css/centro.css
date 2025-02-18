@@ -82,9 +82,9 @@ color: rgb(30, 35, 40);
 .card1 {
     color: rgb(15, 15, 15);
     text-align: center;
-    margin-top: 139px;
+    margin-top: 150px;
     background: url(../../refrigera.jpg);
-    max-height: 170px;
+    max-height: 150px;
     overflow-y: scroll;
 
 }
@@ -101,21 +101,10 @@ color: rgb(30, 35, 40);
 }
 
 .card1 h2 {
-    margin: 10px;
-    color: red;
-    top: 11%;
-    right: 10%;
-   
-    animation: card1 1s infinite;
-}
-
-@keyframes card1 {
-    0% {
-        animation: 0.1s ease-in-out;
-        border: 2px double rgb(6, 238, 196);
-    }
-
-
+    margin-top: 0;
+    font-size: 25px;
+    color: rgba(219, 56, 56, 0.749);
+    font-family: segunda;
 
 }
 
@@ -160,6 +149,8 @@ color: rgb(30, 35, 40);
 
 .opcoes-geral .manutencao{
     background: url(imagens/manutenção/manutenção-ar.jpg) no-repeat;
+    border-radius: 10px;
+    border: 4px groove rgba(70, 61, 61, 0.088);
     background-size: 300px;
     
 }
