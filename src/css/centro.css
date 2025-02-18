@@ -94,6 +94,13 @@ color: rgb(30, 35, 40);
     background-color: rgba(240, 248, 255, 0.432);
 }
 
+.opcoes-geral h1,p{
+    font-size: 20px;
+    display: block;
+
+    
+}
+
 .card1 h1 {
     color: rgb(46, 161, 214);
     border-bottom: 1px solid;

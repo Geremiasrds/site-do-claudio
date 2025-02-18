@@ -12,6 +12,14 @@ botao.addEventListener('click', (e) => {
     window.open(url, '_blank');
 });
 
+const opcoesGeral = document.querySelector('.opcoes-geral')
+function mecher() {
+    opcoesGeral.innerHTML='<h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>'
+    console.log(opcoesGeral)
+}
+
+console.log(opcoesGeral)
+
 
 
 
