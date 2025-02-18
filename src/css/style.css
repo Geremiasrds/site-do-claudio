@@ -284,6 +284,14 @@ a {
         text-align: center;
         background-color: rgba(12, 148, 233, 0.315);
     }
+    #enviar{
+        display: none;
+    }
+
+    /* .limpeza, .instalacao, .visita, .simulação{
+        display: none;
+    } */
+
 
 
     .header li {
