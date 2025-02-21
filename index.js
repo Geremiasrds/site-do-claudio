@@ -1,39 +1,81 @@
+const nome = document.getElementById('nome');
+const resultadoVazio = document.getElementById("vazio-input")
+const numero = document.getElementById('numero')
+const clicar = document.getElementById('enviar')
+clicar.addEventListener('click',(e=>{invocacao()}))
+    
+function invocacao() {
+    const pegarValorDoNome = nome.value
+    const pegarvalorDoNumero = numero.value
+    const sumir = document.querySelector('.formulario')
+    console.log(pegarValorDoNome)
+    console.log(pegarvalorDoNumero)
+
+    if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {
+        nome.style.border='1px solid red'
+        numero.style.border='1px solid red'
+               resultadoVazio.innerHTML = '<div >Preencha todos os campos!</div>'
+               resultadoVazio.style.display='block'
+    } else {
+        sumir.innerHTML = `
+        <div class='resultado-geral-input'>
+          <h4>OBRIGADO!</h4>
+        <p>Aguarde! entraremos em contato com você!</p>
+      <div class='resultado-dados'>
+       <p>Nome: ${pegarValorDoNome}</p>
+      <p>Fone: ${pegarvalorDoNumero}</p>
+      
+      </div>
+      <div class='nossonumeros'>
+      <h3>Numeros que entraremos em contato com você</h3>
+       <p>Fone :  91984572107</p>
+       <p>Fone :  91984572107</p>
+      </div>
+        </div>
+      
+     
+    `
+    }
 
 
-// botao.addEventListener('click', (e) => {
-//     const input = document.getElementById('meu-input')
-//     const inputNuber = document.getElementById('meu-input-nuber')
-// const mensagem = input.value
-// const mensagem2 = inputNuber.value
+}
+document.getElementById('numero').addEventListener('keyup', (e) => {
+    const key = e.which || e.keyCode
+    const enter = key === 13
+    if (enter) {
+        invocacao()
+    }
+})
 
-// const numero = '+559199069633'; // número de telefone do destinatário
 
-// const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem, mensagem2)}`;
-// window.open(url, '_blank');
+// input.addEventListener('click', (e) => {
+//     clicar.style.display = 'block'
+
 // });
 
 
-const input = document.getElementById('meu-input');
-const clicar = document.getElementById('enviar')
 
-input.addEventListener('input', (e) => {
-    clicar.style.display = 'block'
 
-});
 
-clicar.addEventListener('click', (e => {
-    const inputs = document.querySelectorAll('input')
-    inputs.forEach((input) => {
-        const sumir = document.querySelector('.formulario')
-        sumir.innerHTML='<h2>Aguarde entraremos em contato com voce</h2>'
 
-        const valor = input.value;
-        const linkWhatsApp = `https://wa.me/send?l=pt&amp;phone=559199069633?text=${valor}`;
-        window.open(linkWhatsApp, '_blank');
 
-    });
 
-}))
+
+
+
+
+
+// document.getElementById('input').addEventListener('keyup', (e) => {
+//     const userName = e.target.value
+//     const key = e.which || e.keyCode
+//     const enter = key === 13
+//     if (enter) {
+//     }
+// })
+
+
+
+
 
 
 
@@ -78,3 +120,13 @@ function btnLimpeza() {
 }
 
 
+
+// const imagem1 = document.querySelector('.imagem');
+
+// imagem1.addEventListener('mouseover', () => {
+//     imagem1.style.transform = 'scale(1.5)';
+// });
+
+// imagem1.addEventListener('mouseout', () => {
+//     imagem1.style.transform = 'scale(1)';
+// });

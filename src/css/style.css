@@ -2,13 +2,16 @@
     font-family: primeira;
     src: url(fontes/Kanit/Kanit-Medium.ttf) format('truetype')
 }
+
 @font-face {
     font-family: quarta;
     src: url(fontes/Kanit/Kanit-MediumItalic.ttf) format('truetype')
 }
-body{
+
+body {
     background-color: #4b565a3a;
 }
+
 strong,
 h2 {
     font-family: primeira;
@@ -45,6 +48,19 @@ figure {
     background-color: rgb(250, 252, 252);
 }
 
+
+/* .imagem1 {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease;
+  }
+  
+  .imagem1:hover {
+    transform: scale(1.5);
+  }
+   */
+
+
 figure img {
     height: 200px;
     padding: 0;
@@ -54,7 +70,7 @@ figure img {
 .header ul {
     display: flex;
     flex-wrap: wrap;
-    font-family:quarta;
+    font-family: quarta;
     list-style: none;
     padding: 0 0 0 288px;
 }
@@ -64,6 +80,26 @@ figcaption {
     padding-left: 9px;
 
 
+}
+
+
+.nossonumeros h3{
+     margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-align: center;
+}
+.nossonumeros p{
+    font-family: primeira;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   
+
+}
+.nossonumeros{
+    padding: 5px;
 }
 
 
@@ -85,6 +121,69 @@ figcaption {
     }
 }
 
+.resultado-dados p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.225);
+    margin: 0 10px;
+    color: #95c973;
+    padding: 0;
+    font-family: quarta;
+}
+
+.resultado-dados {
+    text-align: left;
+    background-color: #0d0d0d57;
+    border-radius: 9px;
+
+}
+
+
+.resultado-geral-input h4{
+color: #0077ff;
+font-family: terceira;
+height: 0;
+
+}
+
+#vazio-input {
+    display: none;
+    color: #f00;
+    font-size: 10px;
+    animation: minhaAnimacao 5s infinite;
+    height: 15px;
+}
+
+@keyframes minhaAnimacao {
+    50% {
+        font-size: 9px;
+
+    }
+
+    100% {
+        font-size: 10px;
+        background-color: rgba(0, 128, 0, 0.083);
+    }
+}
+
+
+
+/* 
+.img-centro {
+    width: 400px;
+    height: 400px;
+
+}
+.img-centro img{
+    animation: crescer-diminuir 4s infinite;
+    border-radius: 10px;
+}
+
+@keyframes crescer-diminuir {
+
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+} */
 
 
 
@@ -277,16 +376,17 @@ a {
         list-style: none;
         width: 250px;
         height: 50px;
-        margin:10px 0 40px 0;
+        margin: 10px 0 40px 0;
         color: #0f4053;
         border-radius: 10px;
         border: 1px solid rgb(248, 244, 244);
         text-align: center;
         background-color: rgba(12, 148, 233, 0.315);
     }
-    #enviar{
+
+    /* #enviar{
         display: none;
-    }
+    } */
 
     /* .limpeza, .instalacao, .visita, .simulação{
         display: none;
@@ -317,11 +417,39 @@ a {
         height: 138px;
         width: 100vh;
         top: 0;
-         left: -3%;
-        /* border: 10px ridge rgba(0, 0, 0, 0.063); */ 
+        left: -3%;
+        /* border: 10px ridge rgba(0, 0, 0, 0.063); */
 
     }
 
+
+    animacao {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        position: relative;
+        animation: minhaAnimacao 2s infinite;
+    }
+
+    @keyframes minhaAnimacao {
+        0% {
+            transform: translateX(0);
+            background-color: #f00;
+        }
+
+        50% {
+            transform: translateX(200px);
+            background-color: #0f0;
+        }
+
+        100% {
+            transform: translateX(0);
+            background-color: #f00;
+        }
+    }
+
+
+    
     .header input:checked~ul {
         display: block;
         text-align: center;
@@ -330,44 +458,66 @@ a {
         margin-top: 50px;
         padding-left: 50px;
         font-family: primeira;
+        border-radius: 0 0 15px 0;
         width: 100%;
+        position: relative;
+        animation: Animacao 0.5s ease;
+
     }
 
-
-    .infor-menu {
-        font-size: 11px;
-        text-align: left;
-        display: block;
-        padding: 0;
-        padding: 0;
-        color: #f7f7f7;
-        background-color: #f7f7f70f;
+    @keyframes Animacao {
+        0% {
+            
+            transform: translateX(-200px)
+        }
     }
 
+}
 
-    .header .menu {
-        display: block;
-    }
 
-    .header nav ul {
-        display: none;
-        list-style: none;
-    }
 
-    .header nav ul li {
-        font-size: 30px;
-        border-radius: 10px;
-        justify-content: end;
-        align-items: end;
-        text-align: end;
-        justify-items: left;
-    }
 
-    .area-central {
-        text-align: center;
-    }
 
-    /* #input,
+
+
+
+
+
+
+.infor-menu {
+    font-size: 11px;
+    text-align: left;
+    display: block;
+    padding: 0;
+    padding: 0;
+    color: #f7f7f7;
+    background-color: #f7f7f70f;
+}
+
+
+.header .menu {
+    display: block;
+}
+
+.header nav ul {
+    display: none;
+    list-style: none;
+}
+
+.header nav ul li {
+    font-size: 30px;
+    border-radius: 10px;
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+    justify-items: left;
+}
+
+.area-central {
+    text-align: center;
+}
+
+/* #input,
     button {
         position: relative;
         display: none;
@@ -376,95 +526,116 @@ a {
         left: 0;
     } */
 
-    .infor-menu { 
-        font-size: 16px;
-        text-align: left;
-        padding: 0;
-        padding: 0;
-        color: #f7f2f2;
-        background-color: #1010107b;
-    }
+.infor-menu {
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    padding: 0;
+    color: #f7f2f2;
+    background-color: #1010107b;
+}
 
-    .header .inicial {
-        width: 90px;
-        left: 10%;
-        color: #0077ff;
-    }
+.header .inicial {
+    width: 90px;
+    left: 10%;
+    color: #0077ff;
+}
 
-    figure {
-        display: flex;
-        width: 300px;
-        height: 0;
-        font-size: 25px;
-        align-items: center;
-        padding: 30px 0 0 0;
-        margin: 30px 0 0 0;
-        font-family: primeira;
-
-    }
-
-    figure img {
-        height: 140px;
-        padding: 20px 0 30px 0;
-        padding-right: 8px;
-    }
-
-    figcaption {
-        display: block;
-        border-left: 2px solid #0077ff;
-        padding-left: 9px;
-
-
-    }
-
-    .area-central {
-        text-align: center;
-        background-color: rgba(249, 251, 252, 0.406);
-        margin-top: 0px;
-        padding-top: 0;
-    }
-
-    .paginas{
-        padding-top: 120px;
-    }
-
-    .whatsapp-btn {
-        position: fixed;
-        top: 4%;
-        height: 80px;
-        right: 3%;
-        text-align: center;
-        font-family: primeira;
-font-size: 8px;
-        animation: movimento 2s infinite;
-    }
-
-    @keyframes movimento {
-        50% {
-            border-radius: 20px;
-            transform: translatey(10px);
-            font-size: 18px;
-        }
-    }
-
-    .formulario {
-        font-family: primeira;
-        text-align: center;
-        font-size: 12px;
-        display: block;
-        align-items: center;
-        margin: 10px 0 10px;
-        border-radius: 10px;
-        background-color: rgb(169, 184, 190);
-    
-    
-    }
-
-    .primeira-area img{
-        width: 100%;
-
-    }
-
-    
+figure {
+    display: flex;
+    width: 300px;
+    height: 0;
+    font-size: 25px;
+    align-items: center;
+    padding: 30px 0 0 0;
+    margin: 30px 0 0 0;
+    font-family: primeira;
 
 }
+
+figure img {
+    height: 140px;
+    padding: 20px 0 30px 0;
+    padding-right: 8px;
+}
+
+figcaption {
+    display: block;
+    border-left: 2px solid #0077ff;
+    padding-left: 9px;
+
+
+}
+
+.area-central {
+    text-align: center;
+    background-color: rgba(249, 251, 252, 0.406);
+    margin-top: 0px;
+    padding-top: 0;
+}
+
+.paginas {
+    padding-top: 120px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    top: 4%;
+    height: 80px;
+    right: 3%;
+    text-align: center;
+    font-family: primeira;
+    font-size: 8px;
+    animation: movimento 2s infinite;
+}
+
+@keyframes movimento {
+    50% {
+        border-radius: 20px;
+        transform: translatey(10px);
+        font-size: 18px;
+    }
+}
+
+.formulario {
+    font-family: primeira;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    align-items: center;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+    background-color: rgb(169, 184, 190);
+
+
+}
+
+.primeira-area img {
+    width: 100%;
+
+}
+
+
+#vazio-input {
+    text-align: center;
+    color: #f00;
+    position: relative;
+    font-size: 10px;
+    animation: minhaAnimacao 5s infinite;
+    height: 15px;
+}
+
+@keyframes minhaAnimacao {
+    50% {
+        font-size: 9px;
+
+    }
+
+    100% {
+        font-size: 10px;
+        background-color: rgba(0, 128, 0, 0.083);
+    }
+}
+
+
+
