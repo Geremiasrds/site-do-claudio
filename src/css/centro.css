@@ -23,16 +23,16 @@
 }
 
 body {
-    animation: animacaodapagina 0.3s ease;
+    animation: animacaodapagina 1.3s ease;
 }
 
 .header {
-    animation: animacaodomenu 3s ease;
+    animation: animacaodomenu 5s ease;
 }
 
 @keyframes animacaodomenu {
     0% {
-        width: 200px;
+        width: 0;
         border-radius: 0 0 200px 200px;
         background-color: rgb(255, 255, 255);
     }
