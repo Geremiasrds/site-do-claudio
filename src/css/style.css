@@ -125,13 +125,15 @@ figcaption {
     border-bottom: 1px solid rgba(0, 0, 0, 0.225);
     margin: 0 10px;
     color: #95c973;
-    padding: 0;
     font-family: quarta;
+    text-align: center;
+    
 }
 
 .resultado-dados {
     text-align: left;
     background-color: #0d0d0d57;
+    margin: 20px;
     border-radius: 9px;
 
 }
@@ -187,28 +189,6 @@ height: 0;
         background-color: rgba(0, 128, 0, 0.083);
     }
 }
-
-
-
-/* 
-.img-centro {
-    width: 400px;
-    height: 400px;
-
-}
-.img-centro img{
-    animation: crescer-diminuir 4s infinite;
-    border-radius: 10px;
-}
-
-@keyframes crescer-diminuir {
-
-  100% {
-    width: 100%;
-    height: 100%;
-  }
-} */
-
 
 
 .header-menu {
@@ -497,17 +477,6 @@ a {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 .infor-menu {
     font-size: 11px;
     text-align: left;

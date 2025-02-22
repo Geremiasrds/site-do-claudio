@@ -1,8 +1,16 @@
+const opcoesGeral = document.querySelector('.opcoes-geral')
 const nome = document.getElementById('nome');
 const resultadoVazio = document.getElementById("vazio-input")
 const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
 clicar.addEventListener('click', (e => { invocacao() }))
+document.getElementById('numero').addEventListener('keyup', (e) => {
+    const key = e.which || e.keyCode
+    const enter = key === 13
+    if (enter) {
+        invocacao()
+    }
+})
 
 function invocacao() {
     const pegarValorDoNome = nome.value
@@ -18,7 +26,6 @@ animation: animacao-placeholder 0.5s infinite;
         numero.style = `
         animation: animacao-placeholder 0.5s infinite;
         `
-
         resultadoVazio.innerHTML = '<div >Preencha todos os campos!</div>'
         resultadoVazio.style.display = 'block'
     } else {
@@ -33,66 +40,23 @@ animation: animacao-placeholder 0.5s infinite;
       </div>
       <div class='nossonumeros'>
       <h3>Numeros que entraremos em contato com você</h3>
-       <p>Fone :  91984572107</p>
-       <p>Fone :  91984572107</p>
+       <p>📞Fone  :  91984572107 </p>
+       <p>📞Fone :  91984572107</p>
       </div>
         </div>
-      
-     
     `
     }
-
-
 }
-document.getElementById('numero').addEventListener('keyup', (e) => {
-    const key = e.which || e.keyCode
-    const enter = key === 13
-    if (enter) {
-        invocacao()
-    }
-})
 
-
-// input.addEventListener('click', (e) => {
-//     clicar.style.display = 'block'
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById('input').addEventListener('keyup', (e) => {
-//     const userName = e.target.value
-//     const key = e.which || e.keyCode
-//     const enter = key === 13
-//     if (enter) {
-//     }
-// })
-
-
-
-
-
-
-
-
-const opcoesGeral = document.querySelector('.opcoes-geral')
 function mecher() {
-    opcoesGeral.innerHTML = '<h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>'
+    opcoesGeral.innerHTML = `
+    <div class='arealgeraljs'>
+    
+    <h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>
+    </div>
+    `
     console.log(opcoesGeral)
 }
-
-
-
 
 const classVazia = document.querySelector('.mostrar-clicar')
 function btnVisita() {
