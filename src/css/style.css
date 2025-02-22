@@ -594,6 +594,7 @@ figcaption {
     font-family: primeira;
     text-align: center;
     font-size: 12px;
+    /* padding-top: 150px; */
     display: block;
     align-items: center;
     margin: 10px 0 10px;

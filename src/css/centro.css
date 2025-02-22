@@ -2,6 +2,7 @@
     font-family: segunda;
     src: url(fontes/Kanit/Kanit-ExtraLightItalic.ttf) format('truetype')
 }
+
 @font-face {
     font-family: terceira;
     src: url(fontes/Kanit/Kanit-ExtraBold.ttf) format('truetype')
@@ -12,21 +13,44 @@
     font-family: primeira;
 }
 
+body {
+    animation: animacaodapagina 2s ease;
+}
+
+@keyframes animacaodapagina {
+    0% {
+        font-size: 0;
+        margin: 50px;
+        border: 2px solid black;
+    }
+
+    50% {
+        
+        background-color: rgba(95, 158, 160, 0.583);
+      
+    }
+
+    100% {
+        background-color: rgba(95, 158, 160, 0.294);
+       
+    }
+}
+
 .arealgeraljs {
     display: block;
     width: 100%;
     text-align: center;
     justify-content: center;
     color: rgba(4, 130, 240, 0);
-    animation:   animacao22 1s infinite;
-    animation:   listadeanimacao 5s ease-in-out;
+    animation: animacao22 1s infinite;
+    animation: listadeanimacao 5s ease-in-out;
 
-    border-top: 3px double black ;
+    border-top: 3px double black;
     height: 100%;
     color: rgba(4, 130, 240, 0.275);
-      border-bottom: 2px solid rgb(9, 9, 9);
-      background-color: rgba(3, 242, 7, 0.296);
-      color: blue;
+    border-bottom: 2px solid rgb(9, 9, 9);
+    background-color: rgba(3, 242, 7, 0.296);
+    color: blue;
 }
 
 
@@ -50,77 +74,85 @@
 }
 
 
-  @keyframes listadeanimacao{
+@keyframes listadeanimacao {
     0% {
         color: rgba(4, 130, 240, 0);
-        border-top: 1px double black ;
+        border-top: 1px double black;
         height: 0px;
         border-bottom: 30px groove rgba(14, 14, 14, 0.253);
         color: rgba(0, 0, 255, 0);
     }
+
     50% {
-        border-top: 3px double rgb(6, 223, 75) ;
+        border-top: 3px double rgb(6, 223, 75);
         color: rgba(4, 130, 240, 0.489);
         border-bottom: 5px solid rgba(12, 12, 12, 0.258);
         height: 70px;
         color: rgba(0, 0, 255, 0.444);
     }
+
     80% {
-        border-top: 3px double black ;
+        border-top: 3px double black;
         height: 70px;
         color: rgba(4, 130, 240, 0.275);
-          border-bottom: 2px solid rgb(9, 9, 9);
-          background-color: rgba(3, 242, 7, 0.296);
-          color: blue;
-    }
-    100% {
-        border-top: 3px double black ;
-        height: 100%;
-        color: rgba(4, 130, 240, 0.275);
-          border-bottom: 2px solid rgb(9, 9, 9);
-          background-color: rgba(3, 242, 7, 0.296);
-          color: blue;
-          border-left: 2px ridge black ;
-        border-right: 2px ridge black ;
+        border-bottom: 2px solid rgb(9, 9, 9);
+        background-color: rgba(3, 242, 7, 0.296);
+        color: blue;
     }
 
-  }
-  @keyframes animacao22 {
+    100% {
+        border-top: 3px double black;
+        height: 100%;
+        color: rgba(4, 130, 240, 0.275);
+        border-bottom: 2px solid rgb(9, 9, 9);
+        background-color: rgba(3, 242, 7, 0.296);
+        color: blue;
+        border-left: 2px ridge black;
+        border-right: 2px ridge black;
+    }
+
+}
+
+@keyframes animacao22 {
     0% {
         color: rgba(4, 130, 240, 0);
     }
+
     50% {
         color: rgba(4, 130, 240, 0.489);
     }
+
     100% {
         color: rgba(4, 130, 240, 0.275);
     }
 
-  }
+}
 
 
-  @keyframes animacao-placeholder {
+@keyframes animacao-placeholder {
     0% {
-      border: 1px solid rgba(255, 0, 0, 0);
+        border: 1px solid rgba(255, 0, 0, 0);
     }
+
     50% {
         border: 1px double hsl(0, 100%, 70%);
         font-size: 11.9px;
     }
+
     100% {
 
         border: 1px solid rgba(255, 0, 0, 0);
-          
-        
+
+
     }
 
-    
-  }
-  
-  
 
-  
-  
+}
+
+
+
+
+
 
 .formulario {
     font-size: 12px;
@@ -132,36 +164,38 @@
 
 }
 
-.simulação button{
+.simulação button {
     background-color: rgba(150, 162, 165, 0.909);
     font-family: terceira;
     margin: 0 10px;
-    
+
 }
-.simulação h2{
-color: rgb(30, 35, 40);
-    
+
+.simulação h2 {
+    color: rgb(30, 35, 40);
+
 }
-.simulação{
+
+.simulação {
     background-color: rgba(150, 150, 165, 0.14);
     height: 100%;
-    
+
 }
 
 /* .mostrar-clicar{
     display: none;
 } */
-.instalacao{
+.instalacao {
     display: none;
     background-color: rgba(127, 255, 212, 0.212);
 }
 
-.limpeza{
+.limpeza {
     background-color: rgba(118, 156, 217, 0.242);
     display: none;
 }
 
-.visita{
+.visita {
     background-color: rgba(61, 74, 127, 0.247);
     display: none;
 }
@@ -182,11 +216,12 @@ color: rgb(30, 35, 40);
     background-color: rgba(240, 248, 255, 0.432);
 }
 
-.opcoes-geral h1,p{
+.opcoes-geral h1,
+p {
     font-size: 20px;
     display: block;
 
-    
+
 }
 
 .card1 h1 {
@@ -214,10 +249,13 @@ color: rgb(30, 35, 40);
 }
 
 
-.opcoes-geral figcaption button, strong {
+.opcoes-geral figcaption button,
+strong {
     font-size: 30px;
 }
-.opcoes-geral figcaption button, p {
+
+.opcoes-geral figcaption button,
+p {
     font-family: segunda;
     font-size: 16px;
     margin-left: 10px;
@@ -242,13 +280,14 @@ color: rgb(30, 35, 40);
     padding-right: 0;
 }
 
-.opcoes-geral .manutencao{
+.opcoes-geral .manutencao {
     background: url(imagens/manutenção/manutenção-ar.jpg) no-repeat;
     border-radius: 10px;
     border: 4px groove rgba(70, 61, 61, 0.088);
     background-size: 300px;
-    
+
 }
+
 .opcoes-geral {
 
     text-align: center;
