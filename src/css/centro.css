@@ -23,18 +23,17 @@
 }
 
 body {
-    animation: animacaodapagina 5s ease;
+    animation: animacaodapagina 0.3s ease;
 }
 
 .header {
-    animation: animacaodomenu 2s ease;
+    animation: animacaodomenu 3s ease;
 }
 
 @keyframes animacaodomenu {
     0% {
-        border-radius: 500px;
-        width: 20px;
-        padding: 0;
+        width: 200px;
+        border-radius: 0 0 200px 200px;
         background-color: rgb(255, 255, 255);
     }
 
@@ -49,23 +48,17 @@ body {
 
 @keyframes animacaodapagina {
     0% {
-        padding-top: 100px;
-        margin-top: 100px;
         border-radius: 100px;
-
+        transform: translate(10px, 50%);
     }
 
     50% {
-        padding-top: 100px;
-        margin-top: 100px;
         background-color: rgba(95, 158, 160, 0.583);
 
 
     }
 
     100% {
-        padding-top: 0px;
-        margin-top: 0px;
         background-color: rgba(95, 158, 160, 0.294);
 
     }
@@ -213,10 +206,7 @@ body {
 
 
 .visita {
-    background-color: rgba(61, 74, 127, 0.247);
-    display: none;}
-
-.mostrar-clicar {
+display: none;
     background-color: rgba(61, 74, 127, 0.247);
     animation: animacaoNaVisita 1.5s ease-in-out;
 }
