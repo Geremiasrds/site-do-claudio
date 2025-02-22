@@ -2,20 +2,25 @@ const nome = document.getElementById('nome');
 const resultadoVazio = document.getElementById("vazio-input")
 const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
-clicar.addEventListener('click',(e=>{invocacao()}))
-    
+clicar.addEventListener('click', (e => { invocacao() }))
+
 function invocacao() {
     const pegarValorDoNome = nome.value
     const pegarvalorDoNumero = numero.value
     const sumir = document.querySelector('.formulario')
-    console.log(pegarValorDoNome)
-    console.log(pegarvalorDoNumero)
 
     if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {
-        nome.style.border='1px solid red'
-        numero.style.border='1px solid red'
-               resultadoVazio.innerHTML = '<div >Preencha todos os campos!</div>'
-               resultadoVazio.style.display='block'
+        nome.style = `
+animation: animacao-placeholder 0.5s infinite;
+        `
+        nome.placeholder = `Por favor digite seu nome!`
+        numero.placeholder = `Por favor digite seu numero!`
+        numero.style = `
+        animation: animacao-placeholder 0.5s infinite;
+        `
+
+        resultadoVazio.innerHTML = '<div >Preencha todos os campos!</div>'
+        resultadoVazio.style.display = 'block'
     } else {
         sumir.innerHTML = `
         <div class='resultado-geral-input'>

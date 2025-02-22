@@ -33,11 +33,34 @@
 
 }
 
+
+  @keyframes animacao-placeholder {
+    0% {
+      border: 1px solid rgba(255, 0, 0, 0);
+    }
+    50% {
+        border: 2px double hsl(0, 100%, 70%);
+    }
+    100% {
+
+
+        border: 1px solid rgba(255, 0, 0, 0);
+          
+        
+    }
+
+    
+  }
+  
+  
+
+  
+  
+
 .formulario {
     font-size: 12px;
     margin: 10px 0 10px;
     border-radius: 10px;
-    justify-items: center;
     border: 1px ridge rgba(0, 0, 0, 0.063);
     background-color: rgb(169, 184, 190);
 
