@@ -4,6 +4,8 @@ const resultadoVazio = document.getElementById("vazio-input")
 const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
 const dados = localStorage.getItem('meus-dados');
+const inputsDeSimulacao = document.querySelectorAll('.simulação')
+console.log(inputsDeSimulacao)
 clicar.addEventListener('click', (e => { invocacao() }))
 document.getElementById('numero').addEventListener('keyup', (e) => {
     const key = e.which || e.keyCode
@@ -71,24 +73,5 @@ function btnVisita() {
     pegar1.style.display = 'block'
     pegar2.style.display = 'none'
     pegar3.style.display = 'none'
-
-}
-function btnIstalacao() {
-    const pegar1 = classVazia.childNodes[1]
-    const pegar2 = classVazia.childNodes[3]
-    const pegar3 = classVazia.childNodes[5]
-    pegar1.style.display = 'none'
-    pegar2.style.display = 'block'
-    pegar3.style.display = 'none'
-
-}
-
-function btnLimpeza() {
-    const pegar1 = classVazia.childNodes[1]
-    const pegar2 = classVazia.childNodes[3]
-    const pegar3 = classVazia.childNodes[5]
-    pegar1.style.display = 'none'
-    pegar2.style.display = 'none'
-    pegar3.style.display = 'block'
 
 }

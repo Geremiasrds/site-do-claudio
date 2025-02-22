@@ -211,28 +211,22 @@ body {
 
 }
 
-.simulação {
-    background-color: rgba(150, 150, 165, 0.14);
-    height: 100%;
-
-}
-
-/* .mostrar-clicar{
-    display: none;
-} */
-.instalacao {
-    display: none;
-    background-color: rgba(127, 255, 212, 0.212);
-}
-
-.limpeza {
-    background-color: rgba(118, 156, 217, 0.242);
-    display: none;
-}
 
 .visita {
     background-color: rgba(61, 74, 127, 0.247);
     display: none;
+    animation: animacaoNaVisita 2s ease-in-out;
+}
+
+
+
+@keyframes animacaoNaVisita {
+    0% {
+        margin: 10px;
+        border-radius: 100%;
+        background-color: rgb(97, 186, 224);
+        transform: translatex(100deg, 20deg);
+    }
 }
 
 
