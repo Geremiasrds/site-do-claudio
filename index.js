@@ -3,9 +3,12 @@ const nome = document.getElementById('nome');
 const resultadoVazio = document.getElementById("vazio-input")
 const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
-const dados = localStorage.getItem('meus-dados');
-const inputsDeSimulacao = document.querySelectorAll('.simulação')
+const sumir = document.querySelector('.formulario')
+
+
 clicar.addEventListener('click', (e => { invocacao() }))
+
+const dados = localStorage.getItem('meus-dados');
 document.getElementById('numero').addEventListener('keyup', (e) => {
     const key = e.which || e.keyCode
     const enter = key === 13
@@ -21,11 +24,9 @@ document.getElementById('numero').addEventListener('keyup', (e) => {
 function invocacao() {
     const pegarValorDoNome = nome.value
     const pegarvalorDoNumero = numero.value
-    const sumir = document.querySelector('.formulario')
 
-    if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {v
-        nome.style = 
-        `
+    if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {
+        nome.style = `
 animation: animacao-placeholder 0.5s infinite;
         `
         nome.placeholder = `Por favor digite seu nome!`
@@ -62,22 +63,32 @@ function mecher() {
     <h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>
     </div>
     `
+    console.log(opcoesGeral)
 }
- const meuForDescricao = document.getElementById('texto')
-    const meuNumero = document.getElementById('number')
-    const meuNome = document.getElementById('nome')
-    const meuEnd = document.getElementById('end')
-const classVazia = document.querySelector('.mostrar-clicar')
-function btnVisita() {   
-    console.log(meuForDescricao.value)
-    console.log(meuNome)
-    console.log(meuNumero)
-    console.log(meuEnd)
-    meuNumero.value
-    meuEnd.value
-    meuEnd.values
 
-        const pegar1 = classVazia.childNodes[1]
+const meuForDescricao = document.getElementById('texto')
+const nomeDeUser = document.querySelector('#nome-de-user')
+const numeroDoUser = document.getElementById('number')
+const endeDoUser = document.getElementById('end')
+console.log(meuForDescricao.innerHTML='oioi')
+console.log(nomeDeUser)
+const classVazia = document.querySelector('.mostrar-clicar')
+function btnVisita() {
+    const pegar1 = classVazia.childNodes[1]
     pegar1.style.display = 'block'
 
 }
+
+btnVisita()
+
+
+
+// const imagem1 = document.querySelector('.imagem');
+
+// imagem1.addEventListener('mouseover', () => {
+//     imagem1.style.transform = 'scale(1.5)';
+// });
+
+// imagem1.addEventListener('mouseout', () => {
+//     imagem1.style.transform = 'scale(1)';
+// });
