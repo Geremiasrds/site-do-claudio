@@ -48,10 +48,11 @@ body {
 
 @keyframes animacaodapagina {
     0% {
-        border-radius: 100px;
-        transform: translate(10px, 50%);
+        
+        /* transform: translate(10px, 50%); */
+        transform: rotate(-5deg);
     }
-
+    
     50% {
         background-color: rgba(95, 158, 160, 0.583);
 

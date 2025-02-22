@@ -5,7 +5,6 @@ const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
 const dados = localStorage.getItem('meus-dados');
 const inputsDeSimulacao = document.querySelectorAll('.simulação')
-console.log(inputsDeSimulacao)
 clicar.addEventListener('click', (e => { invocacao() }))
 document.getElementById('numero').addEventListener('keyup', (e) => {
     const key = e.which || e.keyCode
@@ -24,8 +23,9 @@ function invocacao() {
     const pegarvalorDoNumero = numero.value
     const sumir = document.querySelector('.formulario')
 
-    if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {
-        nome.style = `
+    if (pegarValorDoNome === '' || pegarvalorDoNumero === '') {v
+        nome.style = 
+        `
 animation: animacao-placeholder 0.5s infinite;
         `
         nome.placeholder = `Por favor digite seu nome!`
@@ -62,16 +62,22 @@ function mecher() {
     <h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>
     </div>
     `
-    console.log(opcoesGeral)
 }
-
+ const meuForDescricao = document.getElementById('texto')
+    const meuNumero = document.getElementById('number')
+    const meuNome = document.getElementById('nome')
+    const meuEnd = document.getElementById('end')
 const classVazia = document.querySelector('.mostrar-clicar')
-function btnVisita() {
-    const pegar1 = classVazia.childNodes[1]
-    const pegar2 = classVazia.childNodes[3]
-    const pegar3 = classVazia.childNodes[5]
+function btnVisita() {   
+    console.log(meuForDescricao.value)
+    console.log(meuNome)
+    console.log(meuNumero)
+    console.log(meuEnd)
+    meuNumero.value
+    meuEnd.value
+    meuEnd.values
+
+        const pegar1 = classVazia.childNodes[1]
     pegar1.style.display = 'block'
-    pegar2.style.display = 'none'
-    pegar3.style.display = 'none'
 
 }
