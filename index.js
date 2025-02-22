@@ -3,12 +3,17 @@ const nome = document.getElementById('nome');
 const resultadoVazio = document.getElementById("vazio-input")
 const numero = document.getElementById('numero')
 const clicar = document.getElementById('enviar')
+const dados = localStorage.getItem('meus-dados');
 clicar.addEventListener('click', (e => { invocacao() }))
 document.getElementById('numero').addEventListener('keyup', (e) => {
     const key = e.which || e.keyCode
     const enter = key === 13
     if (enter) {
         invocacao()
+        const valor = e.target.value;
+        localStorage.setItem('meus-dados', valor);
+        console.log(valor)
+      
     }
 })
 
@@ -87,15 +92,3 @@ function btnLimpeza() {
     pegar3.style.display = 'block'
 
 }
-
-
-
-// const imagem1 = document.querySelector('.imagem');
-
-// imagem1.addEventListener('mouseover', () => {
-//     imagem1.style.transform = 'scale(1.5)';
-// });
-
-// imagem1.addEventListener('mouseout', () => {
-//     imagem1.style.transform = 'scale(1)';
-// });

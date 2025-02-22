@@ -12,25 +12,56 @@
     padding-top: 130px;
     font-family: primeira;
 }
-
-body {
-    animation: animacaodapagina 2s ease;
+#primeiroh1{
+    color: green;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 2px double;
+    background-color: rgba(255, 255, 0, 0.159);
 }
 
+body {
+    animation: animacaodapagina 4s ease;
+}
+header {
+    animation: animacaodomenu 2s ease;
+}
+
+@keyframes animacaodomenu {
+    0% {
+        border: 2px solid black;
+        width: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+    }
+    
+    50% {
+        transform: rotate3d(70deg);
+    }
+    100% {
+        background-color: rgb(20, 227, 227);
+    }
+}
 @keyframes animacaodapagina {
     0% {
-        font-size: 0;
-        margin: 50px;
+        padding-top: 100px;
+        margin-top: 100px;
         border: 2px solid black;
-    }
-
-    50% {
         
+    }
+    
+    50% {
+        padding-top: 100px;
+        margin-top: 100px;
         background-color: rgba(95, 158, 160, 0.583);
+        
       
     }
-
     100% {
+        padding-top: 0px;
+        margin-top: 0px;
         background-color: rgba(95, 158, 160, 0.294);
        
     }
@@ -204,7 +235,7 @@ body {
 .card1 {
     color: rgb(15, 15, 15);
     text-align: center;
-    margin-top: 150px;
+    margin-top: 96px;
     background: url(../../refrigera.jpg);
     max-height: 150px;
     overflow-y: scroll;
