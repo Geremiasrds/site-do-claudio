@@ -214,18 +214,28 @@ body {
 
 .visita {
     background-color: rgba(61, 74, 127, 0.247);
-    display: none;
-    animation: animacaoNaVisita 2s ease-in-out;
+    display: none;}
+
+.mostrar-clicar {
+    background-color: rgba(61, 74, 127, 0.247);
+    animation: animacaoNaVisita 1.5s ease-in-out;
 }
 
 
 
 @keyframes animacaoNaVisita {
     0% {
-        margin: 10px;
+        border: 2px double rgba(0, 0, 0, 0.166);
         border-radius: 100%;
-        background-color: rgb(97, 186, 224);
-        transform: translatex(100deg, 20deg);
+        color: rgb(4, 132, 244);
+    }
+    50%{
+        background-color: rgba(0, 0, 0, 0.203);
+        border: 2px double rgba(0, 0, 0, 0.442);
+    }
+    100%{
+        border: 2px double rgba(0, 0, 0, 0.095);
+        background-color: rgba(128, 255, 0, 0.174);
     }
 }
 
