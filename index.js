@@ -63,15 +63,13 @@ function mecher() {
     <h1>EM MANUTENÇÃO</h1>  <p>Estamos buscando melhor praticidade pra você</p>
     </div>
     `
-    console.log(opcoesGeral)
 }
 
 const meuForDescricao = document.getElementById('texto')
 const nomeDeUser = document.querySelector('#nome-de-user')
 const numeroDoUser = document.getElementById('number')
 const endeDoUser = document.getElementById('end')
-console.log(meuForDescricao.innerHTML='oioi')
-console.log(nomeDeUser)
+
 const classVazia = document.querySelector('.mostrar-clicar')
 function btnVisita() {
     const pegar1 = classVazia.childNodes[1]
@@ -79,7 +77,6 @@ function btnVisita() {
 
 }
 
-btnVisita()
 
 
 
